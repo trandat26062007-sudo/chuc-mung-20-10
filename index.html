@@ -1,95 +1,206 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
+    />
     <title>🌸 Chúc mừng Ngày Phụ nữ Việt Nam 20/10</title>
-    <meta name="description" content="Thiệp chúc mừng Ngày Phụ nữ Việt Nam 20/10 – Gửi yêu thương đến những người phụ nữ tuyệt vời nhất.">
+    <meta
+      name="description"
+      content="Thiệp chúc mừng Ngày Phụ nữ Việt Nam 20/10 – Gửi yêu thương đến những người phụ nữ tuyệt vời nhất."
+    />
 
     <!-- Open Graph – hiển thị đẹp khi chia sẻ lên Zalo / Facebook -->
-    <meta property="og:title" content="🌸 Chúc mừng Ngày Phụ nữ Việt Nam 20/10">
-    <meta property="og:description" content="Một bông hoa đang chờ bạn. Chạm vào để nhận lời chúc ấm áp nhân Ngày Phụ nữ Việt Nam.">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="vi_VN">
+    <meta
+      property="og:title"
+      content="🌸 Chúc mừng Ngày Phụ nữ Việt Nam 20/10"
+    />
+    <meta
+      property="og:description"
+      content="Một bông hoa đang chờ bạn. Chạm vào để nhận lời chúc ấm áp nhân Ngày Phụ nữ Việt Nam."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="vi_VN" />
 
     <!-- Google Fonts – hỗ trợ tiếng Việt đầy đủ -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- ===== Lớp hiệu ứng nền ===== -->
     <div id="bg-effects" aria-hidden="true"></div>
     <div id="falling-petals" aria-hidden="true"></div>
 
     <!-- ===== Bông hoa chính (búp) ===== -->
-    <div id="main-flower-wrap" role="button" tabindex="0"
-         aria-label="Chạm vào bông hoa để mở thiệp chúc mừng">
-        <svg id="main-flower" viewBox="-70 -115 140 210">
-            <!-- Thân hoa -->
-            <path class="stem"
-                  d="M0 90 C-3 70 3 40 0 5"
-                  stroke="#4a7c59" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <div
+      id="main-flower-wrap"
+      role="button"
+      tabindex="0"
+      aria-label="Chạm vào bông hoa để mở thiệp chúc mừng"
+    >
+      <svg id="main-flower" viewBox="-70 -115 140 210">
+        <defs>
+          <radialGradient id="main-petal-gradient" cx="35%" cy="25%" r="85%">
+            <stop offset="0%" stop-color="#fff7fa" />
+            <stop offset="38%" stop-color="#ff7eb3" />
+            <stop offset="100%" stop-color="#d9437c" />
+          </radialGradient>
+          <radialGradient id="main-bud-gradient" cx="32%" cy="24%" r="82%">
+            <stop offset="0%" stop-color="#fff6f8" />
+            <stop offset="24%" stop-color="#ffb2cb" />
+            <stop offset="62%" stop-color="#ef6a9c" />
+            <stop offset="100%" stop-color="#b9366d" />
+          </radialGradient>
+          <path
+            id="main-rose-petal"
+            d="M0 5 C-7 1 -15 -9 -15 -20 C-15 -30 -9 -36 -4 -34 C-1 -33 -1 -29 0 -26 C2 -32 6 -36 11 -33 C17 -29 16 -20 13 -12 C10 -3 5 3 0 5Z"
+            fill="url(#main-petal-gradient)"
+            stroke="#b9366d"
+            stroke-opacity="0.38"
+            stroke-width="0.9"
+          />
+        </defs>
+        <!-- Thân hoa -->
+        <path
+          class="stem"
+          d="M0 90 C-3 70 3 40 0 5"
+          stroke="#4a7c59"
+          stroke-width="3.5"
+          fill="none"
+          stroke-linecap="round"
+        />
 
-            <!-- Lá trái -->
-            <path class="leaf"
-                  d="M-1 62 Q-24 48 -32 34 Q-22 28 -10 42 Q-4 50 -1 62Z"
-                  fill="#5a9c69"/>
-            <!-- Lá phải -->
-            <path class="leaf"
-                  d="M1 40 Q24 26 32 14 Q22 8 10 22 Q4 30 1 40Z"
-                  fill="#4a8c59"/>
+        <!-- Lá trái -->
+        <path
+          class="leaf"
+          d="M-1 62 Q-24 48 -32 34 Q-22 28 -10 42 Q-4 50 -1 62Z"
+          fill="#5a9c69"
+        />
+        <!-- Lá phải -->
+        <path
+          class="leaf"
+          d="M1 40 Q24 26 32 14 Q22 8 10 22 Q4 30 1 40Z"
+          fill="#4a8c59"
+        />
 
-            <!-- ── Cánh hoa (ẩn khi chưa nở) ── -->
-            <g class="petal-group" transform="rotate(0,0,0)">
-                <ellipse class="petal p1" cx="0" cy="-30" rx="16" ry="34" fill="#ff7eb3"/>
-            </g>
-            <g class="petal-group" transform="rotate(51.4,0,0)">
-                <ellipse class="petal p2" cx="0" cy="-30" rx="15" ry="32" fill="#ff6b9d"/>
-            </g>
-            <g class="petal-group" transform="rotate(102.9,0,0)">
-                <ellipse class="petal p3" cx="0" cy="-30" rx="14" ry="31" fill="#ff85a1"/>
-            </g>
-            <g class="petal-group" transform="rotate(154.3,0,0)">
-                <ellipse class="petal p4" cx="0" cy="-30" rx="16" ry="33" fill="#ffa3b5"/>
-            </g>
-            <g class="petal-group" transform="rotate(205.7,0,0)">
-                <ellipse class="petal p5" cx="0" cy="-30" rx="14" ry="31" fill="#e88bc4"/>
-            </g>
-            <g class="petal-group" transform="rotate(257.1,0,0)">
-                <ellipse class="petal p6" cx="0" cy="-30" rx="15" ry="32" fill="#ff7093"/>
-            </g>
-            <g class="petal-group" transform="rotate(308.6,0,0)">
-                <ellipse class="petal p7" cx="0" cy="-30" rx="14" ry="30" fill="#ffb7c5"/>
-            </g>
+        <!-- Cánh hoa hồng (ẩn khi chưa nở) -->
+        <g class="petal-group" transform="rotate(0,0,0)">
+          <use class="petal p1" href="#main-rose-petal" />
+        </g>
+        <g class="petal-group" transform="rotate(51.4,0,0)">
+          <use class="petal p2" href="#main-rose-petal" />
+        </g>
+        <g class="petal-group" transform="rotate(102.9,0,0)">
+          <use class="petal p3" href="#main-rose-petal" />
+        </g>
+        <g class="petal-group" transform="rotate(154.3,0,0)">
+          <use class="petal p4" href="#main-rose-petal" />
+        </g>
+        <g class="petal-group" transform="rotate(205.7,0,0)">
+          <use class="petal p5" href="#main-rose-petal" />
+        </g>
+        <g class="petal-group" transform="rotate(257.1,0,0)">
+          <use class="petal p6" href="#main-rose-petal" />
+        </g>
+        <g class="petal-group" transform="rotate(308.6,0,0)">
+          <use class="petal p7" href="#main-rose-petal" />
+        </g>
 
-            <!-- Nhụy hoa (ẩn khi chưa nở) -->
-            <g class="pistil-group">
-                <circle class="pistil-outer" cx="0" cy="0" r="12" fill="#ffd700"/>
-                <circle class="pistil-mid"   cx="0" cy="0" r="7"  fill="#ffaa00"/>
-                <circle cx="-3" cy="-4" r="1.6" fill="#e8960c" opacity="0.7"/>
-                <circle cx="4"  cy="-2" r="1.4" fill="#e8960c" opacity="0.7"/>
-                <circle cx="0"  cy="4"  r="1.6" fill="#e8960c" opacity="0.7"/>
-                <circle cx="-5" cy="2"  r="1"   fill="#e8960c" opacity="0.5"/>
-                <circle cx="5"  cy="1"  r="1"   fill="#e8960c" opacity="0.5"/>
-            </g>
+        <g class="petal-group rose-middle" transform="scale(0.72)">
+          <use class="petal" href="#main-rose-petal" transform="rotate(25.7)" />
+          <use class="petal" href="#main-rose-petal" transform="rotate(77.1)" />
+          <use
+            class="petal"
+            href="#main-rose-petal"
+            transform="rotate(128.6)"
+          />
+          <use class="petal" href="#main-rose-petal" transform="rotate(180)" />
+          <use
+            class="petal"
+            href="#main-rose-petal"
+            transform="rotate(231.4)"
+          />
+          <use
+            class="petal"
+            href="#main-rose-petal"
+            transform="rotate(282.9)"
+          />
+          <use
+            class="petal"
+            href="#main-rose-petal"
+            transform="rotate(334.3)"
+          />
+        </g>
+        <g class="petal-group rose-inner" transform="scale(0.44)">
+          <use class="petal" href="#main-rose-petal" transform="rotate(0)" />
+          <use class="petal" href="#main-rose-petal" transform="rotate(72)" />
+          <use class="petal" href="#main-rose-petal" transform="rotate(144)" />
+          <use class="petal" href="#main-rose-petal" transform="rotate(216)" />
+          <use class="petal" href="#main-rose-petal" transform="rotate(288)" />
+        </g>
 
-            <!-- Búp hoa – che cánh, biến mất khi nở -->
-            <g class="bud-overlay">
-                <path d="M0 10 C-15 -2 -17 -30 -10 -50
-                         C-6 -62 -2 -68 0 -72
-                         C2 -68 6 -62 10 -50
-                         C17 -30 15 -2 0 10Z"
-                      fill="#4a7c59"/>
-                <path d="M0 10 C15 -2 17 -30 10 -50
-                         C6 -62 2 -68 0 -72"
-                      fill="none" stroke="#63b375" stroke-width="0.8" opacity="0.45"/>
-                <ellipse cx="-3" cy="-63" rx="6" ry="10" fill="#ff7eb3" opacity="0.85"/>
-                <ellipse cx="3"  cy="-61" rx="5" ry="8"  fill="#ff97b8" opacity="0.7"/>
-            </g>
-        </svg>
+        <!-- Tâm cánh cuộn (ẩn khi chưa nở) -->
+        <g class="pistil-group">
+          <path
+            d="M-7 5 C-14 -2 -8 -14 1 -14 C11 -14 14 -4 8 2 C4 6 -3 3 -3 -2 C-3 -6 2 -8 5 -5 C7 -3 5 0 3 0"
+            fill="none"
+            stroke="#b9366d"
+            stroke-width="4"
+            stroke-linecap="round"
+          />
+          <path
+            d="M-7 5 C-14 -2 -8 -14 1 -14 C11 -14 14 -4 8 2"
+            fill="none"
+            stroke="#ffb2cb"
+            stroke-width="1.2"
+            stroke-linecap="round"
+          />
+        </g>
+
+        <!-- Búp hoa – che cánh, biến mất khi nở -->
+        <g class="bud-overlay">
+          <path
+            d="M-2 7 C-17 8 -26 -1 -29 -15 C-16 -12 -7 -5 -1 3Z"
+            fill="#438052"
+          />
+          <path d="M2 7 C17 8 26 -1 29 -15 C16 -12 7 -5 1 3Z" fill="#579866" />
+          <path
+            d="M0 9 C-12 2 -18 -14 -16 -34 C-14 -53 -6 -69 0 -79 C6 -69 14 -53 16 -34 C18 -14 12 2 0 9Z"
+            fill="url(#main-bud-gradient)"
+            stroke="#bd4777"
+            stroke-opacity="0.48"
+            stroke-width="1.1"
+          />
+          <path
+            d="M0 2 C-7 -13 -8 -39 0 -69 M1 -7 C8 -19 10 -37 5 -53"
+            fill="none"
+            stroke="#fff0f5"
+            stroke-linecap="round"
+            stroke-width="1.3"
+            opacity="0.7"
+          />
+          <path
+            d="M-6 -57 C-4 -64 -1 -70 1 -73"
+            fill="none"
+            stroke="#ffffff"
+            stroke-linecap="round"
+            stroke-width="2"
+            opacity="0.52"
+          />
+          <path
+            d="M0 9 C-7 3 -8 -4 -6 -12 C-2 -7 0 -3 0 2 C0 -3 2 -7 6 -12 C8 -4 7 3 0 9Z"
+            fill="#397849"
+          />
+        </g>
+      </svg>
     </div>
 
     <!-- Dòng gợi ý -->
@@ -100,49 +211,90 @@
 
     <!-- ===== Thiệp chúc mừng ===== -->
     <div id="card-wrap">
-        <div id="card">
-            <!-- Trang trí góc trên-trái -->
-            <svg class="card-corner top-left" viewBox="0 0 100 100" aria-hidden="true">
-                <path d="M8 92 C8 55 20 30 45 14" fill="none" stroke="#d4a5e5" stroke-width="1.6" stroke-linecap="round" opacity="0.5"/>
-                <path d="M18 68 C12 55 10 48 17 42 C22 50 22 60 18 68Z" fill="#a8d8b9" opacity="0.45"/>
-                <path d="M32 38 C27 28 27 20 34 18 C38 26 36 34 32 38Z" fill="#a8d8b9" opacity="0.35"/>
-                <circle cx="45" cy="14" r="5.5" fill="#ffb7c5" opacity="0.65"/>
-                <circle cx="45" cy="14" r="2.8" fill="#ffd700" opacity="0.75"/>
-                <circle cx="15" cy="78" r="4" fill="#dda0dd" opacity="0.45"/>
-                <circle cx="15" cy="78" r="2" fill="#ffd700" opacity="0.55"/>
-            </svg>
+      <div id="card">
+        <!-- Trang trí góc trên-trái -->
+        <svg
+          class="card-corner top-left"
+          viewBox="0 0 100 100"
+          aria-hidden="true"
+        >
+          <path
+            d="M8 92 C8 55 20 30 45 14"
+            fill="none"
+            stroke="#d4a5e5"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            opacity="0.5"
+          />
+          <path
+            d="M18 68 C12 55 10 48 17 42 C22 50 22 60 18 68Z"
+            fill="#a8d8b9"
+            opacity="0.45"
+          />
+          <path
+            d="M32 38 C27 28 27 20 34 18 C38 26 36 34 32 38Z"
+            fill="#a8d8b9"
+            opacity="0.35"
+          />
+          <circle cx="45" cy="14" r="5.5" fill="#ffb7c5" opacity="0.65" />
+          <circle cx="45" cy="14" r="2.8" fill="#ffd700" opacity="0.75" />
+          <circle cx="15" cy="78" r="4" fill="#dda0dd" opacity="0.45" />
+          <circle cx="15" cy="78" r="2" fill="#ffd700" opacity="0.55" />
+        </svg>
 
-            <!-- Trang trí góc dưới-phải -->
-            <svg class="card-corner bottom-right" viewBox="0 0 100 100" aria-hidden="true">
-                <path d="M92 8 C92 45 80 70 55 86" fill="none" stroke="#d4a5e5" stroke-width="1.6" stroke-linecap="round" opacity="0.5"/>
-                <path d="M82 32 C88 45 90 52 83 58 C78 50 78 40 82 32Z" fill="#a8d8b9" opacity="0.45"/>
-                <path d="M68 62 C73 72 73 80 66 82 C62 74 64 66 68 62Z" fill="#a8d8b9" opacity="0.35"/>
-                <circle cx="55" cy="86" r="5.5" fill="#ffb7c5" opacity="0.65"/>
-                <circle cx="55" cy="86" r="2.8" fill="#ffd700" opacity="0.75"/>
-                <circle cx="85" cy="22" r="4" fill="#dda0dd" opacity="0.45"/>
-                <circle cx="85" cy="22" r="2" fill="#ffd700" opacity="0.55"/>
-            </svg>
+        <!-- Trang trí góc dưới-phải -->
+        <svg
+          class="card-corner bottom-right"
+          viewBox="0 0 100 100"
+          aria-hidden="true"
+        >
+          <path
+            d="M92 8 C92 45 80 70 55 86"
+            fill="none"
+            stroke="#d4a5e5"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            opacity="0.5"
+          />
+          <path
+            d="M82 32 C88 45 90 52 83 58 C78 50 78 40 82 32Z"
+            fill="#a8d8b9"
+            opacity="0.45"
+          />
+          <path
+            d="M68 62 C73 72 73 80 66 82 C62 74 64 66 68 62Z"
+            fill="#a8d8b9"
+            opacity="0.35"
+          />
+          <circle cx="55" cy="86" r="5.5" fill="#ffb7c5" opacity="0.65" />
+          <circle cx="55" cy="86" r="2.8" fill="#ffd700" opacity="0.75" />
+          <circle cx="85" cy="22" r="4" fill="#dda0dd" opacity="0.45" />
+          <circle cx="85" cy="22" r="2" fill="#ffd700" opacity="0.55" />
+        </svg>
 
-            <!-- Nội dung thiệp -->
-            <h1 id="card-title" class="card-line">
-                Chúc mừng ngày<br>Phụ nữ Việt Nam 20/10
-            </h1>
-            <div class="card-divider card-line" aria-hidden="true">✿ ✿ ✿</div>
-            <p id="card-to" class="card-line"></p>
-            <div id="card-message">
-                <!-- JS điền lời chúc vào đây -->
-            </div>
-            <p id="card-signature" class="card-line"></p>
+        <!-- Nội dung thiệp -->
+        <h1 id="card-title" class="card-line">
+          Chúc mừng ngày<br />Phụ nữ Việt Nam 20/10
+        </h1>
+        <div class="card-divider card-line" aria-hidden="true">✿ ✿ ✿</div>
+        <p id="card-to" class="card-line"></p>
+        <div id="card-message">
+          <!-- JS điền lời chúc vào đây -->
         </div>
-        <button id="btn-reset" aria-label="Xem lại từ đầu">↻ Xem lại</button>
+        <p id="card-signature" class="card-line"></p>
+      </div>
+      <button id="btn-reset" aria-label="Xem lại từ đầu">↻ Xem lại</button>
     </div>
 
     <!-- Nút nhạc nền (ẩn mặc định nếu chưa có nhạc) -->
-    <button id="btn-music" aria-label="Bật/tắt nhạc nền" title="Bật/tắt nhạc nền">
-        <span class="music-icon">🎵</span>
+    <button
+      id="btn-music"
+      aria-label="Bật/tắt nhạc nền"
+      title="Bật/tắt nhạc nền"
+    >
+      <span class="music-icon">🎵</span>
     </button>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
-
